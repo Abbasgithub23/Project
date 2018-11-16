@@ -144,7 +144,7 @@ resource "azurerm_virtual_machine" "myterraformvm" {
         disable_password_authentication = true
         ssh_keys {
             path     = "/home/azureuser/.ssh/authorized_keys"
-            key_data = "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAhNUhKIIjI/U7+j6hAZ3E9Id8Sxsuk2lmklaXyR0FHy0Qo1Dbbt7TD6OtY9taPCsMKXsLa4Ry7pzPx5o7Trt2P+jkVt76TTbOpu+HqHCu2Wa0mwX6/ChwQda6JrteIPfTWKqABdb2vWzOF1b7jCENQyDmFmLtLIyw9sxN7N7uOYXy0A3iyeQCNuHD5hWuAQrmCYZqdJi07LKw1Ctcs7/Da0tryuM6rUEEmZDx5p1lQ+kEtB99tsx5jb15lHkRDgaurbQiVte6ndm2tYLgxxql2XA+MNkXYCYK/83sO6rPBmvf3IQ246AXxDBsKkSCh3zhfwP35shhIg0xFdGt27DamQ=="
+            key_data = ""
         }
     }
 
@@ -156,4 +156,5 @@ resource "azurerm_virtual_machine" "myterraformvm" {
     tags {
         environment = "TESTING"
     }
+
 }
